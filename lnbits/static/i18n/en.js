@@ -608,6 +608,11 @@ window.localisation.en = {
     'The minimum fee reserved per payment.<br>This acts as a floor - the maximum allowed routing fee will never be lower than this value regardless of payment size.',
   fee_reserve_percent_hint:
     'The percentage of the payment amount to reserve for routing fees.',
+  fee_limit: 'Max Routing Fee',
+  fee_limit_percent: 'Max Routing Fee Percent',
+  fee_limit_msats: 'Max routing fee in msats',
+  fee_limit_percent_label: 'Max routing fee in percent',
+  fee_limit_hint: 'If empty, uses fee reserve value',
   payment_timeouts: 'Payment Timeouts',
   payment_wait_time: 'Payment Wait Time',
   seconds: 'seconds',

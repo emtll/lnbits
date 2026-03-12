@@ -121,6 +121,28 @@
             suffix="%"
           ></q-input>
         </div>
+        <div class="col-12 col-md-3">
+          <p><span v-text="$t('fee_limit')"></span></p>
+          <q-input
+            type="number"
+            filled
+            v-model="formData.lnbits_fee_max_msat"
+            :label="$t('fee_limit_msats')"
+            :hint="$t('fee_limit_hint')"
+          >
+          </q-input>
+        </div>
+        <div class="col-12 col-md-3">
+          <p><span v-text="$t('fee_limit_percent')"></span></p>
+          <q-input
+            type="number"
+            filled
+            v-model="formData.lnbits_fee_max_percent"
+            :label="$t('fee_limit_percent_label')"
+            :hint="$t('fee_limit_hint')"
+            step="0.1"
+          ></q-input>
+        </div>
       </div>
       <div class="row q-col-gutter-md q-mt-sm">
         <div class="col-12">
