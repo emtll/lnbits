@@ -193,7 +193,6 @@ class LndWallet(Wallet):
             timeout_seconds=30,
             no_inflight_updates=True,
             max_parts=16,
-            time_pref=0.9,
         )
         try:
             res: Payment = await self.router_rpc.SendPaymentV2(req).read()
